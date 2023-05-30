@@ -1,0 +1,4 @@
+streamlit
+deepgram-sdk
+moviepy
+sentence-transformers

@@ -63,7 +63,7 @@ def transcode_video(id_key, secret_key, upload_id):
 st.set_page_config(page_title="VidTheta",page_icon="🎥")
 deepgram_api_key= "b1222616e4aba06853750bb268672cf95c5e36fa"
 deepgram = Deepgram(deepgram_api_key)
-
+chat_key = st.secrets["chat_key"]
 
 # WebPage
 st.title("Vidtheta🎥")
@@ -181,7 +181,7 @@ if page == "Upload":
 
                     headers = {
                         "Content-Type": "application/json",
-                        "Authorization": f"Bearer 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"
+                        "Authorization": f"Bearer {chat_key}"
                     }
 
                     llm_result = requests.post(URL, headers = headers, json = payload).json()
@@ -297,7 +297,7 @@ elif page == "Search":
 
                     headers = {
                         "Content-Type": "application/json",
-                        "Authorization": f"Bearer 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"
+                        "Authorization": f"Bearer {chat_key}"
                     }
 
                     llm_result = requests.post(URL, headers = headers, json = payload).json()

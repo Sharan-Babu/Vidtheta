@@ -149,11 +149,13 @@ if page == "Upload":
                     result = audio_process(output_audio) 
                     #st.write(result)
 
-                    transcript = result["results"]["channels"][0]["alternatives"][0]["transcript"]
+                    req_res = result["results"]["channels"][0]["alternatives"][0]
+                    transcript = req_res["transcript"]
                     st.header("Full Transcript")
                     st.write(transcript)
+                    
 
-                    paragraphs = result["results"]["channels"][0]["alternatives"][0]["paragraphs"]["paragraphs"]
+                    paragraphs = req_res["paragraphs"]["paragraphs"]
                     final_para = []
                     for x in paragraphs:
                         for y in x["sentences"]:

@@ -238,7 +238,7 @@ if page == "Upload":
 
 # Search Videos Page
 elif page == "Search":
-    #st.write(video_metadatas_array)
+    st.write(video_metadatas_array)
 
 
     if len(video_summaries_array) == 0:
@@ -261,7 +261,7 @@ elif page == "Search":
 
                 #st.write(top_5)
 
-                threshold = 0.7
+                threshold = 0.65
                 similar_results = []
 
                 for x in top_5:

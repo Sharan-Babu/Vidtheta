@@ -67,7 +67,7 @@ chat_key = st.secrets["chat_key"]
 
 # WebPage
 st.title("Vidtheta🎥")
-st.caption("Upon red error, plz refresh page and try again)
+st.caption("Upon red error, plz refresh page and try again")
 st.write("---")
 
 

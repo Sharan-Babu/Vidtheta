@@ -152,6 +152,7 @@ if page == "Upload":
                     req_res = result["results"]["channels"][0]["alternatives"][0]
                     transcript = req_res["transcript"]
                     st.header("Full Transcript")
+                    st.write(req_res)
                     st.write(transcript)
                     
 

@@ -67,6 +67,7 @@ chat_key = st.secrets["chat_key"]
 
 # WebPage
 st.title("Vidtheta🎥")
+st.caption("Upon red error, plz refresh page and try again)
 st.write("---")
 
 
@@ -152,7 +153,7 @@ if page == "Upload":
                     req_res = result["results"]["channels"][0]["alternatives"][0]
                     transcript = req_res["transcript"]
                     st.header("Full Transcript")
-                    st.write(req_res)
+                    #st.write(req_res)
                     st.write(transcript)
                     
 

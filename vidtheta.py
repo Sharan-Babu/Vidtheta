@@ -76,7 +76,7 @@ page = st.sidebar.radio("Select Page:", ('Upload','Search'))
 
 # Load Sentence Similarity Model
 # Vectorizes summaries of news articles and embeds them for later retrieval
-#@st.cache
+@st.cache_resource
 def load_model():
     return SentenceTransformer('msmarco-distilbert-base-tas-b')
 
@@ -327,6 +327,9 @@ elif page == "Search":
                         st.write(x[5])
 
                     st.write("---")
+                
+                st.info(f"Search credit units: {len(similar_results)}")
+                st.caption("Reward tokens can be accordingly given to worker nodes that process search results.")
 
 
             else:

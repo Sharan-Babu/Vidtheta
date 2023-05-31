@@ -238,7 +238,7 @@ if page == "Upload":
 
 # Search Videos Page
 elif page == "Search":
-    st.write(video_metadatas_array)
+    #st.write(video_metadatas_array)
 
 
     if len(video_summaries_array) == 0:
@@ -280,7 +280,7 @@ elif page == "Search":
                     current_search_index_length += len(x[6])
 
                     if current_search_index_length <  6000: # context length limit handling   
-                        search_index.append(f"{i}. {x[6]}")
+                        search_index.append(f"{i}. title:{x[0]}; content:{x[6]}")
                     i += 1    
 
                 #st.write("\n".join(search_index))    
@@ -308,7 +308,7 @@ elif page == "Search":
                     generated_content = llm_result['choices'][0]['message']['content']
                     return generated_content
 
-                quick_answer = quickchat("\n".join(search_index))
+                quick_answer = quickchat("\n\n".join(search_index))
                 st.success(f"**QuickChat Answer:**\n\n{quick_answer}")  
                 st.header("Top Results:")  
 

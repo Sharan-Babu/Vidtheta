@@ -88,7 +88,6 @@ def load_model():
 if os.path.exists('summaries_array.pickle'):
     with open('summaries_array.pickle','rb') as file:
         video_summaries_array = pickle.load(file)
-        video_summaries_array.pop()
 
 else:
     video_summaries_array = []
@@ -97,16 +96,11 @@ else:
 if os.path.exists('metadatas_array.pickle'):
     with open('metadatas_array.pickle','rb') as file:
         video_metadatas_array = pickle.load(file)
-        video_metadatas_array.pop()
 
 else:
     video_metadatas_array = []   
 
-with open("summaries_array.pickle","wb") as file:
-    pickle.dump(video_summaries_array, file)
 
-with open("metadatas_array.pickle","wb") as file:
-    pickle.dump(video_metadatas_array, file)
 
 if page == "Upload":
 

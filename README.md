@@ -1,20 +1,24 @@
 # Vidtheta
 
-Website: https://vidtheta.streamlit.app/
+**Website:** https://vidtheta.streamlit.app/
 
-Project Info: https://devpost.com/software/vidtheta
+**Project Info:** https://devpost.com/software/vidtheta
 
-The documentation website: https://docs.thetatoken.org/docs/theta-video-api-developer-api was very helpful in implementing the project.
+**The documentation website:** [Link](https://docs.thetatoken.org/docs/theta-video-api-developer-api) was very helpful in implementing the project.
 
-Other useful websites to refer:
+**Other useful websites to refer:**
 - https://www.thetatoken.org/
 - https://www.thetavideoapi.com/
 - https://www.youtube.com/@thetalabs6835
-- https://medium.com/theta-network/meet-the-winners-of-the-theta-hackathon-q1-2022-b8feddf429b9
-- https://medium.com/theta-network/new-theta-video-api-service-gives-developers-power-to-bring-web-3-0-20bada2b1fab
+- [Previous Hackathon](https://medium.com/theta-network/meet-the-winners-of-the-theta-hackathon-q1-2022-b8feddf429b9)
+- [About Theta Video API](https://medium.com/theta-network/new-theta-video-api-service-gives-developers-power-to-bring-web-3-0-20bada2b1fab)
 - https://medium.com/@thetalabs
 
-# Useful THETA video functions
+## Steps to run on Local Machine
+![carbon](https://github.com/Sharan-Babu/Vidtheta/assets/50396375/c0664b55-89c2-40c9-852e-96a909befa4b)
+
+
+## Useful THETA video functions - Python
 ```python
 # -- Fetch URL
 def create_presigned_url(id_key, secret_key):

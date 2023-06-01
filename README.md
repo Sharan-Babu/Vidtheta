@@ -1,5 +1,9 @@
 # Vidtheta
 
+Utility, Tooling and Incentive for Theta Network (Video API) users & creators along with powerful Video Search.
+
+
+---
 **Website:** https://vidtheta.streamlit.app/
 
 **Project Info:** https://devpost.com/software/vidtheta
